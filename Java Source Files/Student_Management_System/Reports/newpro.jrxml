@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="progress"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Landscape"
+		 pageWidth="840"
+		 pageHeight="410"
+		 columnWidth="840"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="2" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+
+	<field name="title" class="java.lang.String"/>
+	<field name="cata1" class="java.lang.String"/>
+	<field name="cata2" class="java.lang.String"/>
+	<field name="cata3" class="java.lang.String"/>
+	<field name="cata4" class="java.lang.String"/>
+	<field name="cata5" class="java.lang.String"/>
+	<field name="cata6" class="java.lang.String"/>
+	<field name="cata2_1" class="java.lang.Integer"/>
+	<field name="cata1_1" class="java.lang.Integer"/>
+	<field name="cata3_1" class="java.lang.Integer"/>
+	<field name="cata4_1" class="java.lang.Integer"/>
+	<field name="cata5_1" class="java.lang.Integer"/>
+	<field name="cata6_1" class="java.lang.Integer"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="410"  isSplitAllowed="true" >
+				<barChart>
+					<chart  hyperlinkTarget="Self" >
+					<reportElement
+						x="113"
+						y="26"
+						width="610"
+						height="308"
+						key="element-1"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+						<chartLegend textColor="#000000" backgroundColor="#FFFFFF" >
+					</chartLegend>
+					</chart>
+					<categoryDataset>
+						<dataset >
+						</dataset>
+						<categorySeries>
+							<seriesExpression><![CDATA[$F{title}]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{cata1}]]></categoryExpression>
+							<valueExpression><![CDATA[$F{cata1_1}]]></valueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</categorySeries>
+						<categorySeries>
+							<seriesExpression><![CDATA[$F{title}]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{cata2}]]></categoryExpression>
+							<valueExpression><![CDATA[$F{cata2_1}]]></valueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</categorySeries>
+						<categorySeries>
+							<seriesExpression><![CDATA[$F{title}]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{cata3}]]></categoryExpression>
+							<valueExpression><![CDATA[$F{cata3_1}]]></valueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</categorySeries>
+						<categorySeries>
+							<seriesExpression><![CDATA[$F{title}]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{cata4}]]></categoryExpression>
+							<valueExpression><![CDATA[$F{cata4_1}]]></valueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</categorySeries>
+						<categorySeries>
+							<seriesExpression><![CDATA[$F{title}]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{cata5}]]></categoryExpression>
+							<valueExpression><![CDATA[$F{cata5_1}]]></valueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</categorySeries>
+						<categorySeries>
+							<seriesExpression><![CDATA[$F{title}]]></seriesExpression>
+							<categoryExpression><![CDATA[$F{cata6}]]></categoryExpression>
+							<valueExpression><![CDATA[$F{cata6_1}]]></valueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</categorySeries>
+					</categoryDataset>
+					<barPlot >
+						<plot >
+							<seriesColor seriesOrder="0" color="#FFFF00"/>
+</plot>
+						<categoryAxisFormat>
+							<axisFormat >
+								<labelFont>
+					<font fontName="Dialog" pdfFontName="Helvetica" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false" pdfEncoding="Cp1252"/>
+								</labelFont>
+								<tickLabelFont>
+								</tickLabelFont>
+							</axisFormat>
+						</categoryAxisFormat>
+						<valueAxisFormat>
+							<axisFormat >
+								<labelFont>
+					<font fontName="Dialog" pdfFontName="Helvetica" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false" pdfEncoding="Cp1252"/>
+								</labelFont>
+								<tickLabelFont>
+								</tickLabelFont>
+							</axisFormat>
+						</valueAxisFormat>
+					</barPlot>
+				</barChart>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

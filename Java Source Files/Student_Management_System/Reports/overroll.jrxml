@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="progress"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Landscape"
+		 pageWidth="840"
+		 pageHeight="410"
+		 columnWidth="840"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+
+	<field name="cata1" class="java.lang.Integer"/>
+	<field name="cata2" class="java.lang.Integer"/>
+	<field name="cata3" class="java.lang.Integer"/>
+	<field name="cata4" class="java.lang.Integer"/>
+	<field name="cata5" class="java.lang.Integer"/>
+	<field name="cata6" class="java.lang.Integer"/>
+	<field name="cata2_1" class="java.lang.Integer"/>
+	<field name="cata1_1" class="java.lang.Integer"/>
+	<field name="cata3_1" class="java.lang.Integer"/>
+	<field name="cata4_1" class="java.lang.Integer"/>
+	<field name="cata5_1" class="java.lang.Integer"/>
+	<field name="cata6_1" class="java.lang.Integer"/>
+	<field name="cata1_2" class="java.lang.Integer"/>
+	<field name="cata2_2" class="java.lang.Integer"/>
+	<field name="cata3_2" class="java.lang.Integer"/>
+	<field name="cata4_2" class="java.lang.Integer"/>
+	<field name="cata5_2" class="java.lang.Integer"/>
+	<field name="cata6_2" class="java.lang.Integer"/>
+	<field name="tot1" class="java.lang.String"/>
+	<field name="tot2" class="java.lang.String"/>
+	<field name="tot3" class="java.lang.String"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="410"  isSplitAllowed="true" >
+				<xyLineChart>
+					<chart  hyperlinkTarget="Self" >
+					<reportElement
+						x="109"
+						y="0"
+						width="422"
+						height="270"
+						key="element-1"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#000000" bottomBorder="None" bottomBorderColor="#000000"/>
+						<chartTitle color="#000000" >
+					<font fontName="Dialog" pdfFontName="Helvetica" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false" pdfEncoding="Cp1252"/>
+								<titleExpression><![CDATA["Overroll Progress"]]></titleExpression>
+					</chartTitle>
+						<chartLegend textColor="#000000" backgroundColor="#FFFFFF" >
+					</chartLegend>
+					</chart>
+					<xyDataset>
+						<dataset >
+						</dataset>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot1}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(1)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata1}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot1}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(2)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata2}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot1}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(3)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata3}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot1}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(4)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata4}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot1}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(5)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata5}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot1}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(6)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata6}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot2}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(1)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata1_1}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot2}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(2)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata2_1}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot2}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(3)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata3_1}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot2}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(4)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata4_1}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot2}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(5)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata5_1}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot2}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(6)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata6_1}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot3}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(1)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata1_2}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot3}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(2)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata2_2}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot3}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(3)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata3_2}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot3}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(4)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata4_2}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot3}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(5)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata5_2}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+						<xySeries>
+							<seriesExpression><![CDATA[$F{tot3}]]></seriesExpression>
+							<xValueExpression><![CDATA[Integer.valueOf(6)]]></xValueExpression>
+							<yValueExpression><![CDATA[$F{cata6_2}]]></yValueExpression>
+				<itemHyperlink >
+				</itemHyperlink>
+						</xySeries>
+					</xyDataset>
+					<linePlot >
+						<plot />
+					<categoryAxisLabelExpression><![CDATA["Termtest"]]></categoryAxisLabelExpression>
+						<categoryAxisFormat>
+							<axisFormat >
+							</axisFormat>
+						</categoryAxisFormat>
+					<valueAxisLabelExpression><![CDATA["Marks"]]></valueAxisLabelExpression>
+						<valueAxisFormat>
+							<axisFormat >
+							</axisFormat>
+						</valueAxisFormat>
+					</linePlot>
+				</xyLineChart>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>
